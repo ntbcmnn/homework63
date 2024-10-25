@@ -6,7 +6,7 @@ import Navigation from './Components/Navigation/Navigation.tsx';
 import About from './Containers/About/About.tsx';
 import AddPost from './Containers/AddPost/AddPost.tsx';
 import Contacts from './Containers/Contacts/Contacts.tsx';
-import PostInfo from './Components/PostInfo/PostInfo.tsx';
+import PostInfo from './Containers/PostInfo/PostInfo.tsx';
 
 const App = () => {
   return <>

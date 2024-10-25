@@ -2,8 +2,8 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useCallback, useEffect, useState } from 'react';
 import axiosAPI from '../../axiosAPI.ts';
 import { IPost } from '../../types';
-import Loader from '../UI/Loader/Loader.tsx';
-import Post from '../Post/Post.tsx';
+import Loader from '../../Components/UI/Loader/Loader.tsx';
+import Post from '../../Components/Post/Post.tsx';
 
 const PostInfo = () => {
   const [post, setPost] = useState<IPost>();
