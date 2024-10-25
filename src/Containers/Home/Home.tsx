@@ -14,14 +14,14 @@ const Home = () => {
       const response: { data: IPostAPI } = await axiosAPI<IPostAPI>('/posts.json');
 
       if (response.data) {
-        const gamesAPI: IPost[] = Object.keys(response.data).map(postKey => {
+        const postsAPI: IPost[] = Object.keys(response.data).map(postKey => {
           return {
             ...response.data[postKey],
             id: postKey,
           };
         });
 
-        const sortedPosts = gamesAPI.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        const sortedPosts = postsAPI.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
         setPosts(sortedPosts);
       }
