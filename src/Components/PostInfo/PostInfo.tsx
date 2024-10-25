@@ -5,7 +5,7 @@ import { IPost } from '../../types';
 import Loader from '../UI/Loader/Loader.tsx';
 import Post from '../Post/Post.tsx';
 
-const PostDetail = () => {
+const PostInfo = () => {
   const [post, setPost] = useState<IPost>();
   const [loader, setLoader] = useState<boolean>(false);
   const params = useParams<{ postId: string }>();
@@ -73,4 +73,4 @@ const PostDetail = () => {
   );
 };
 
-export default PostDetail;
+export default PostInfo;
